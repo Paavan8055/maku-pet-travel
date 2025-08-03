@@ -1,5 +1,6 @@
 [build]
 command = "npm install && npm run build"
+publish = ".next"
 
 [build.environment]
 NODE_VERSION = "20"
@@ -7,3 +8,31 @@ NEXT_TELEMETRY_DISABLED = "1"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
+
+[functions]
+external_node_modules = ["sharp"]
+
+[[headers]]
+for = "/api/*"
+[headers.values]
+Cache-Control = "no-cache"
+EOF  
+cd /home/project && cat > maku-travel/netlify.toml << 'EOF'
+[build]
+command = "npm install && npm run build"
+publish = ".next"
+
+[build.environment]
+NODE_VERSION = "20"
+NEXT_TELEMETRY_DISABLED = "1"
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
+[functions]
+external_node_modules = ["sharp"]
+
+[[headers]]
+for = "/api/*"
+[headers.values]
+Cache-Control = "no-cache"
