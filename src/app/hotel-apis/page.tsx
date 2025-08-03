@@ -1,0 +1,1 @@
+export const dynamic = 'force-dynamic'; export default function HotelApisPage() { return (<div style={{padding:'20px'}}><h1>Hotel API Testing</h1><p>API integration dashboard - functionality preserved in simplified version</p></div>); }

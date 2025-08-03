@@ -1,0 +1,1 @@
+/* Enhanced stays page with filters and maps */

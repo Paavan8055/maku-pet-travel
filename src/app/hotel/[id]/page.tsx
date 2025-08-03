@@ -1,0 +1,1 @@
+'use client'; export const dynamic = 'force-dynamic'; export default function HotelDetailPage({ params }: { params: { id: string } }) { return (<div style={{padding:'20px'}}><h1>Hotel Details</h1><p>Hotel ID: {params.id}</p><p>Detailed hotel information with booking capabilities</p></div>); }

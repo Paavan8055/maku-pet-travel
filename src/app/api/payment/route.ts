@@ -1,0 +1,1 @@
+import { NextRequest, NextResponse } from 'next/server'; export async function POST(request: NextRequest) { try { const { amount } = await request.json(); return NextResponse.json({ success: true, message: 'Payment demo mode' }); } catch (error) { return NextResponse.json({ error: 'Payment failed' }, { status: 500 }); } }

@@ -1,0 +1,1 @@
+'use client'; import { useEffect, useRef } from 'react'; export default function MapComponent({ hotels }: { hotels: any[] }) { const mapRef = useRef(null); return <div ref={mapRef} style={{ width: '100%', height: '400px', backgroundColor: '#f0f0f0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Google Maps Integration (API Key Required)</div>; }

@@ -1,0 +1,1 @@
+'use client'; export const dynamic = 'force-dynamic'; export default function PackagesPage() { return (<div style={{padding:'20px'}}><h1>Pet-Friendly Travel Packages</h1><p>Curated adventures designed for you and your pets</p></div>); }

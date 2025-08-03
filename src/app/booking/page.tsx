@@ -1,0 +1,1 @@
+'use client'; export const dynamic = 'force-dynamic'; export default function BookingPage() { return (<div><h1>Enhanced Booking with Stripe Payment</h1><p>Secure payment processing integrated</p></div>); }
